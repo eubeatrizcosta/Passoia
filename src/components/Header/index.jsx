@@ -1,13 +1,26 @@
+import "./Header.scss";
+import Logo from "../../assets/logopassoia.png";
+import { useState } from "react";
 
-function Header (){
-    return <header>
-        <img src="" alt="Logomarca da página" />
-        <ul>
-        <li><a href="#home">LOOKS</a></li>
-        <li><a href="#about">Lançamentos</a></li>
-        <li><a href="#services">Novidades</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+function Header(){
+
+
+    return(
+        <>
+            <div className="container">
+                <img src={Logo} alt="imagem do logo passoia" />
+                <nav className="navbar">
+                    <ul>
+                        <li><a href="#">LOOKS</a></li>
+                        <li><a href="#">LANÇAMENTOS</a></li>
+                        <li><a href="#">NOVIDADE</a></li>
+                    </ul>
+                </nav>
+        
+            </div>
+    
+        </>
+    )
 }
-export default Header
+
+export default Header;
